@@ -1,0 +1,11 @@
+{
+  "name": "looker_ui",
+  "version": "0.1.0",
+  "description": "This is component library for the wardrobe management application Looker.",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "author": "pew-rivza",
+  "license": "ISC"
+}

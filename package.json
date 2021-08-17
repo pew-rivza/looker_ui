@@ -2,10 +2,64 @@
   "name": "looker_ui",
   "version": "0.1.0",
   "description": "This is component library for the wardrobe management application Looker.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
-
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "storybook:export": "build-storybook",
+    "build-storybook": "build-storybook"
   },
-  "author": "pew-rivza",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pew-rivza/looker_ui.git"
+  },
+  "keywords": [
+    "wardrobe",
+    "lookbook",
+    "clothes"
+  ],
+  "author": {
+    "name": "pew-rivza",
+    "email": "pug.ekat@gmail.com"
+  },
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/pew-rivza/looker_ui/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.3.7",
+    "@storybook/manager-webpack5": "^6.3.7",
+    "@storybook/react": "^6.3.7",
+    "@types/react": "^17.0.18",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "sass-loader": "^12.1.0",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-flexbugs-fixes": "^5.0.2"
+  }
 }

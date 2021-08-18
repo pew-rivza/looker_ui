@@ -1,0 +1,48 @@
+@import "../assets/scss/index";
+
+.lkrTextField {
+  width: 100%;
+
+  * {
+    font-family: $font-family !important;
+  }
+
+  label {
+    font-size: $medium-font-size;
+    line-height: $medium-line-height;
+    color: $primary-accent-color;
+    transform: translate(26px, 15px) scale(1);
+
+    &[class*="focused"] {
+      color: $primary-accent-color;
+    }
+  }
+
+  div {
+    border-radius: 8px;
+    color: $primary-accent-color;
+    font-size: $medium-font-size;
+    line-height: $medium-line-height;
+
+    &[class*="focused"] {
+      fieldset[class*="notchedOutline"] {
+        border-width: 1px;
+        border-color: $secondary-accent-color;
+      }
+    }
+
+    &:hover {
+      fieldset:last-child {
+        border-color: $secondary-accent-color;
+      }
+    }
+  }
+
+  input {
+    padding: 15px 15px 14px 26px;
+  }
+
+  fieldset {
+    border-color: $secondary-accent-color;
+  }
+}

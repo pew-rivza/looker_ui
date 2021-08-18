@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'CarosRegular';
+  src: url("../fonts/CarosSoft.ttf");
+}
+
+@font-face {
+  font-family: 'CarosBold';
+  src: url("../fonts/CarosSoftBold.ttf");
+}
+
+@font-face {
+  font-family: 'CarosBolder';
+  src: url("../fonts/CarosSoftBlack.ttf");
+}
+
+@font-face {
+  font-family: 'CarosBolderItalic';
+  src: url("../fonts/CarosSoftBlack-Italic.ttf");
+}
+
+$medium-font-size: 14px;
+$font-family: 'CarosRegular', sans-serif;
+$medium-line-height: 17px;

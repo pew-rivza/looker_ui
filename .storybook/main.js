@@ -22,6 +22,17 @@ module.exports = {
     });
 
     config.module.rules.push({
+      test: /\.(ttf|svg)$/,
+      use: [
+          {
+            loader: 'file-loader',
+          }
+      ],
+      include: path.resolve(__dirname, '../'),
+
+    });
+
+    config.module.rules.push({
       test: /\.(ts|tsx)$/,
       loader: require.resolve("babel-loader"),
       options: {

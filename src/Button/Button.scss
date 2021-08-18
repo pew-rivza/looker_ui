@@ -1,0 +1,31 @@
+@import "../assets/scss/index";
+
+.lkrButton {
+  display: inline-flex;
+  border-radius: 50%;
+  background: url("../assets/images/authButton.svg") no-repeat center;
+  height: 68px;
+  width: 68px;
+  cursor: pointer;
+  position: relative;
+
+  button {
+    background: transparent;
+    border: 1px solid $primary-accent-color;
+    border-radius: 50%;
+    height: 53px;
+    width: 53px;
+    color: $primary-accent-color;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    padding: 0;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+      top: 14.5px;
+      right: 17.5px;
+    }
+  }
+}

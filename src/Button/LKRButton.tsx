@@ -1,4 +1,6 @@
 import React, {FunctionComponent, ReactNode} from "react";
+// @ts-ignore
+import asd from "../assets/images/authButton.svg";
 import "./Button.scss";
 
 interface InputProps {
@@ -15,6 +17,7 @@ const LKRButton: FunctionComponent<InputProps> = ({ value, className, onCLick })
             >
                 { value }
             </button>
+            <img src={asd} />
         </div>
     )
 }

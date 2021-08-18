@@ -10,12 +10,18 @@ interface InputProps {
 
 const LKRTextField: FunctionComponent<InputProps> = ({ label, className, onChange }) => {
     return (
-        <TextField
-            label={label}
-            variant="outlined"
-            onChange={onChange}
-            className={`lkrTextField ${className || ""}`}
-        />
+        <>
+            <TextField
+                label={label}
+                variant="outlined"
+                onChange={onChange}
+                className={`lkrTextField ${className || ""}`}
+            />
+
+
+            <div className={"need"}>шрифт нужный shrift</div>
+            <div className={"sansSerif"}>шрифт санс сериф shrift</div>
+        </>
     )
 }
 

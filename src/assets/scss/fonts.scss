@@ -1,23 +1,20 @@
 @font-face {
   font-family: 'CarosRegular';
-  src: url("../fonts/CarosSoft.ttf");
+  src: url("fonts/CarosSoft.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'CarosBold';
-  src: url("../fonts/CarosSoftBold.ttf");
+  src: url("fonts/CarosSoftBold.ttf") format('truetype') ;
 }
 
 @font-face {
   font-family: 'CarosBolder';
-  src: url("../fonts/CarosSoftBlack.ttf");
+  src: url("fonts/CarosSoftBlack.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'CarosBolderItalic';
-  src: url("../fonts/CarosSoftBlack-Italic.ttf");
+  src: url("fonts/CarosSoftBlack-Italic.ttf") format('truetype');
 }
 
-$medium-font-size: 14px;
-$font-family: 'CarosRegular', sans-serif;
-$medium-line-height: 17px;

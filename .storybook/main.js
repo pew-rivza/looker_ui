@@ -1,4 +1,5 @@
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   "stories": [
@@ -21,16 +22,32 @@ module.exports = {
       include: path.resolve(__dirname, "../")
     });
 
-    config.module.rules.push({
-      test: /\.(ttf|svg)$/,
-      use: [
-          {
-            loader: 'file-loader',
-          }
-      ],
-      include: path.resolve(__dirname, '../'),
+     config.plugins.push(
+         new CopyPlugin({
+           patterns: [
+             {
+               from: path.resolve(__dirname, '../src/assets/fonts'),
+               to:  'fonts',
+             }
+           ],
+         }),
+     )
 
-    });
+    // config.module.rules.push({
+    //   test: /\.(ttf|svg)$/,
+    //   use: [
+    //       {
+    //         loader: 'file-loader',
+    //         options: {
+    //           name: '[name].[contenthash].[ext]',
+    //           // outputPath: 'static/img',
+    //           esModule: false
+    //         }
+    //       }
+    //   ],
+    //   include: path.resolve(__dirname, '../'),
+    //
+    // });
 
     config.module.rules.push({
       test: /\.(ts|tsx)$/,

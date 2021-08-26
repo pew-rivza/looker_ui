@@ -1,5 +1,6 @@
 import React, {FunctionComponent, ReactNode} from "react";
 import "./Button.scss";
+import cat from "../assets/images/cat.jpg";
 
 interface InputProps {
     value: ReactNode;
@@ -15,6 +16,7 @@ const LKRButton: FunctionComponent<InputProps> = ({ value, className, onCLick })
             >
                 { value }
             </button>
+            <img alt={""} src={cat}/>
         </div>
     )
 }

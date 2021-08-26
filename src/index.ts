@@ -1,4 +1,5 @@
 import TestComponent from "./TestComponent/TestComponent";
-import './assets/scss/index.scss'
+import LKRTextField from "./TextField/LKRTextField";
+import LKRButton from "./Button/LKRButton";
 
-export { TestComponent };
+export { TestComponent, LKRButton, LKRTextField };

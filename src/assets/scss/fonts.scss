@@ -1,20 +1,30 @@
 @font-face {
   font-family: 'CarosRegular';
-  src: url("fonts/CarosSoft.ttf") format('truetype');
+  src: url("/static/fonts/CarosSoft.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'CarosBold';
-  src: url("fonts/CarosSoftBold.ttf") format('truetype') ;
+  src: url("/static/fonts/CarosSoftBold.ttf") format('truetype') ;
 }
 
 @font-face {
   font-family: 'CarosBolder';
-  src: url("fonts/CarosSoftBlack.ttf") format('truetype');
+  src: url("/static/fonts/CarosSoftBlack.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'CarosBolderItalic';
-  src: url("fonts/CarosSoftBlack-Italic.ttf") format('truetype');
+  src: url("/static/fonts/CarosSoftBlack-Italic.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'BantyBold';
+  src: url("/static/fonts/BantyBold.ttf") format('truetype');
+}
+
+
+/* keks */
+$medium-font-size: 14px;
+$font-family: 'BantyBold', cursive;
+$medium-line-height: 17px;

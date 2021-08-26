@@ -26,8 +26,8 @@ module.exports = {
          new CopyPlugin({
            patterns: [
              {
-               from: path.resolve(__dirname, '../src/assets/fonts'),
-               to:  'fonts',
+               from: path.resolve(__dirname, '../static/fonts'),
+               to:  'static/fonts',
              }
            ],
          }),
@@ -48,6 +48,13 @@ module.exports = {
     //   include: path.resolve(__dirname, '../'),
     //
     // });
+    // config.module.rules.push({
+    //
+    //   test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+    //       use: ['file-loader'],
+    //   //type: 'asset/inline',
+    //     include: path.resolve(__dirname, '../')
+    // })
 
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
